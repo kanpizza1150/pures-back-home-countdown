@@ -4,7 +4,7 @@ const App = () => {
   const [diffTime, setDiffTime] = useState(null)
 
   const getDiff = () => {
-    const eventTime = moment([2021, 6, 16])
+    const eventTime = moment([2021, 6, 16,16])
     const currentTime = moment()
     const diff = eventTime - currentTime
     const duration = moment.duration(diff)
@@ -20,8 +20,8 @@ const App = () => {
 
   const renderTime = useCallback(() => {
     const items = [
-      { label: 'ปี', key: 'years', val: diffTime?.years() || 0 },
-      { label: 'เดือน', key: 'months', val: diffTime?.months() || 0 },
+      // { label: 'ปี', key: 'years', val: diffTime?.years() || 0 },
+      // { label: 'เดือน', key: 'months', val: diffTime?.months() || 0 },
       { label: 'วัน', key: 'days', val: diffTime?.days() || 0 },
       { label: 'ชั่วโมง', key: 'hours', val: diffTime?.hours() || 0 },
       { label: 'นาที', key: 'minutes', val: diffTime?.minutes() || 0 },
