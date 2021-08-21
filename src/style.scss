@@ -16,8 +16,12 @@ body {
   align-items: center;
   flex-direction: column;
   height: 100vh;
-  padding: 1.5rem;
+  background-image: url('./images/bg.png');
+  background-size: 100vw;
+  background-repeat: no-repeat;
+  background-position:center;
   background-color: black;
+
 }
 @keyframes pulsate {
   100% {
@@ -51,7 +55,7 @@ body {
 
 .text {
   text-align: center;
-  font-size: 3rem;
+  font-size: 2.8rem;
   margin: 3rem 0rem;
   span {
     font-weight: bold;
@@ -83,6 +87,7 @@ body {
   margin: 1rem;
   width: 10rem;
   padding: 1rem;
+  background-color: rgba(0,0,0,0.5);
   box-shadow: 0 0 0.2rem #fff, 0 0 0.2rem #fff, 0 0 2rem #bc13fe,
     0 0 0.8rem #bc13fe, 0 0 2.8rem #bc13fe, inset 0 0 1.3rem #bc13fe;
 }
@@ -94,4 +99,8 @@ body {
 }
 .label {
   font-size: 2rem;
+}
+.bg{
+   background-color: rgba(0,0,0,0.5);
+   padding: 1.5rem;
 }

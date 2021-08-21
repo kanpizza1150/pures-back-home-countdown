@@ -39,12 +39,14 @@ const App = () => {
 
   return (
     <div className='container'>
-      <div className='text top'>อีก</div>
-      <div className='timer__container'>{renderTime()}</div>
-      <div className='text'>
-        <span>เพียว</span>ก็จะได้กลับไร่แล้ว
-        <br />
-        เย้ 🎉 ดีใจแมะ5555{' '}
+      <div className='bg'>
+        <div className='text top'>อีก</div>
+        <div className='timer__container'>{renderTime()}</div>
+        <div className='text'>
+          <span>เพียว</span>ก็จะได้กลับไร่แล้ว
+          <br />
+          เย้ 🎉 ดีใจแมะ5555{' '}
+        </div>
       </div>
     </div>
   )
