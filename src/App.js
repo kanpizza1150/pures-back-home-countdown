@@ -4,7 +4,7 @@ const App = () => {
   const [diffTime, setDiffTime] = useState(null)
 
   const getDiff = () => {
-    const eventTime = moment([2021, 7, 25, 7])
+    const eventTime = moment([2021, 8, 1, 7])
     const currentTime = moment()
     const diff = eventTime - currentTime
     const duration = moment.duration(diff)
@@ -43,9 +43,9 @@ const App = () => {
         <div className='text top'>อีก</div>
         <div className='timer__container'>{renderTime()}</div>
         <div className='text'>
-          <span>เพียว</span>ก็จะได้กลับไร่แล้ว
+          <span>เพียว</span>ต้องกลับไปเข้าเวรแล้ว
           <br />
-          เย้ 🎉 ดีใจแมะ5555{' '}
+          {' '}
         </div>
       </div>
     </div>
