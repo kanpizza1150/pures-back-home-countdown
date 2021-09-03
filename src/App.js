@@ -4,7 +4,7 @@ const App = () => {
   const [diffTime, setDiffTime] = useState(null)
 
   const getDiff = () => {
-    const eventTime = moment([2021, 8, 1, 7])
+    const eventTime = moment([2021, 10, 11, 8])
     const currentTime = moment()
     const diff = eventTime - currentTime
     const duration = moment.duration(diff)
