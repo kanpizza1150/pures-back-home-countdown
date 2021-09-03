@@ -11,7 +11,7 @@ const App = () => {
     setDiffTime(moment.duration(duration))
   }
 
-  console.log(`diffTime`, diffTime)
+
   useEffect(() => {
     setInterval(() => {
       getDiff()
@@ -43,7 +43,7 @@ const App = () => {
         <div className='text top'>อีก</div>
         <div className='timer__container'>{renderTime()}</div>
         <div className='text'>
-          <span>เพียว</span>ต้องกลับไปเข้าเวรแล้ว
+          <span>เพียว</span>จะต้องไปเก็บขี้วัวแล้ว 🐮💩
           <br />
           {' '}
         </div>
